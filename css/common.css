@@ -1,0 +1,43 @@
+/*
+Error: Invalid GBK character "\xE7"
+        on line 9 of sass/common.scss
+
+4:     padding: 0;
+5:     list-style: none;
+6: }
+7: /*
+8: KISSY CSS Reset
+9: 理念：1. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。
+10: 2. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。
+11: 3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。
+12: 特色：1. 适应中文；2. 基于最新主流浏览器。
+13:  *\/
+14: 
+
+Backtrace:
+sass/common.scss:9
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1300:in `rescue in block in find_encoding_error'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1297:in `block in find_encoding_error'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `each_with_index'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:1296:in `find_encoding_error'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util.rb:905:in `check_sass_encoding'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:436:in `check_encoding!'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:392:in `_to_tree'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE7\"\A         on line 9 of sass/common.scss\A \A 4:     padding: 0;\A 5:     list-style: none;\A 6: }\A 7: /*\A 8: KISSY CSS Reset\A 9: 理念：1. reset 的目的不是清除浏览器的默认样式，这仅是部分工作。清除和重置是紧密不可分的。\A 10: 2. reset 的目的不是让默认样式在所有浏览器下一致，而是减少默认样式有可能带来的问题。\A 11: 3. reset 期望提供一套普适通用的基础样式。但没有银弹，推荐根据具体需求，裁剪和修改后再使用。\A 12: 特色：1. 适应中文；2. 基于最新主流浏览器。\A 13:  */\A 14: "; }
