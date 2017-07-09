@@ -1,7 +1,55 @@
+$circle_size: 11px;
+
 #main {
 	width: 100vw;
 	height: 100vh;
 	position: relative; 
 	overflow: hidden;
 	background-color: #f3f3f3;
+
+	.nav_component {
+		position: absolute;
+		z-index: 100;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    right: 0;
+    width: 40px;
+    height: 100%;
+		.nav_list {
+			height: $circle_size;
+			width: $circle_size;
+			margin: 6px 0;
+			border: 1px solid #333;
+			border-radius: $circle_size/2;
+			cursor: pointer;
+		}
+		.nav_list.active {
+			border-color: #fff;
+			background-color: #fff;
+		}
+	}
+
+	.carousel_container {
+		overflow: hidden;
+		.carousel_list {
+			width: 100vw;
+			height: 100vh;
+			display: none;
+		}
+		.carousel_list.active {
+			display: flex;
+		}
+		.card_1 {
+			background-color: #c23531;
+		}
+		.card_2 {
+			background-color: #2f4554;
+		}
+		.card_3 {
+			background-color: #b1654b;
+		}
+
+	}
 }
